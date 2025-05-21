@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie 1 Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie 10</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+    <main>
+        <img src="C:\Users\Admin\OneDrive\Desktop\Website\vada chennai.jpg" alt="Movie 10">
+        <p>Genre: Anjaan</p>
+        <p>Duration: 2h 15m</p>
+        <p>Description: An action-packed thriller that keeps you on the edge of your seat.</p>
+        
+        <h2>Showtimes</h2>
+        <ul>
+            <li>12:00 PM</li>
+            <li>3:00 PM</li>
+            <li>6:00 PM</li>
+            <li>9:00 PM</li>
+        </ul>
+
+        <h2>Book Your Ticket</h2>
+        <form id="booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="time">Showtime:</label>
+            <select id="time">
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="6:00 PM">6:00 PM</option>
+                <option value="9:00 PM">9:00 PM</option>
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmation"></div>
+    </main>
+
+    <script>
+        document.getElementById("booking-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const time = document.getElementById("time").value;
+            document.getElementById("confirmation").innerHTML = `<p>Thank you, ${name}! Your ticket for Movie 1 at ${time} has been booked.</p>`;
+        });
+    </script>
+</body>
+</html>

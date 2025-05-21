@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css">
+     <style>
+        body {
+            background: url('C:\Users\Admin\OneDrive\Desktop\Website\movie.png') no-repeat center center/cover;
+            color: white;
+        }
+        .movie img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Ticket Booking</h1>
+        <a href="index.html">← Back to Home</a>
+    </header>
+    <main>
+        <section id="movies">
+            <h2>Now Showing</h2>
+            <div class="movies-container">
+                <div class="movie" onclick="openMoviePage('movie1.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\action.jpg" alt="Movie 1">
+                    <h3>Movie 1</h3>
+                    <p>Action | 2h 15m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie2.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\anjaan.png" alt="Movie 2">
+                    <h3>Movie 2</h3>
+                    <p>Drama | 2h 10m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie3.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\dragon.jpg" alt="Movie 3">
+                    <h3>Movie 3</h3>
+                    <p>Dragon | 1h 45m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie4.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\imaikka nodigal.jpg" alt="Movie 4">
+                    <h3>Movie 4</h3>
+                    <p>Imaikka Nodigal | 2h 00m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie5.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\mark antony.jpg" alt="Movie 5">
+                    <h3>Movie 5</h3>
+                    <p>Mark Antony | 2h 30m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie6.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\mesaya murukku.png" alt="Movie 6">
+                    <h3>Movie 6</h3>
+                    <p>Mesaya murukku | 2h 10m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie7.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\pathu thala.jpg" alt="Movie 7">
+                    <h3>Movie 7</h3>
+                    <p>Pathu Thala | 2h 10m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie8.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\saithan.jpg" alt="Movie 8">
+                    <h3>Movie 8</h3>
+                    <p>Saithan | 2h 10m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie9.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\theri.jfif" alt="Movie 9">
+                    <h3>Movie 9</h3>
+                    <p>Theri | 2h 10m</p>
+                </div>
+                <div class="movie" onclick="openMoviePage('movie10.html')">
+                    <img src="C:\Users\Admin\OneDrive\Desktop\Website\vada chennai.jpg" alt="Movie 10">
+                    <h3>Movie 10</h3>
+                    <p>Vada Chennai | 2h 10m</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function openMoviePage(moviePage) {
+            window.location.href = moviePage;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    font-family: Brush Script MT;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+    text-color:black;
+}
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+.movie {
+    background: white;
+    margin: 20px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    color:black;
+}
+.movie img {
+    width: 100%;
+    border-radius: 5px;
+}
+.movie:hover {
+    background: lightgray;
+    
+}
